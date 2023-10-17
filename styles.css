@@ -75,7 +75,8 @@ p
     color: #000000;
     display: inline-flex;
     text-align: justify;
-    word-spacing:5px;
+    margin:30px;
+    text-align: left;
    
 }
 
