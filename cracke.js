@@ -72,94 +72,43 @@ document.getElementById("login-form").addEventListener("submit", (event) => {
     } else {
         alert("Login failed. Please check your username and password.");
     }
-});
-// Define variables to store data
-let transactions = [];
-let totalIncome = 0;
-let totalExpenses = 0;
-
-// Get HTML elements
-const transactionForm = document.getElementById("transaction-form");
-const transactionDescription = document.getElementById("transaction-description");
-const transactionType = document.getElementById("transaction-type");
-const transactionAmount = document.getElementById("transaction-amount");
-const transactionDate = document.getElementById("transaction-date");
-const transactionList = document.getElementById("transaction-list");
-const totalIncomeSpan = document.getElementById("total-income");
-const totalExpensesSpan = document.getElementById("total-expenses");
-const balanceSpan = document.getElementById("balance");
-
-// Handle form submission
-transactionForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const description = transactionDescription.value;
-    const type = transactionType.value;
-    const amount = parseFloat(transactionAmount.value);
-    const date = transactionDate.value;
-
-    if (description === "" || isNaN(amount) || date === "") {
-        alert("Please fill in all fields correctly.");
-        return;
-    }
-
-    const transaction = {
-        description,
-        type,
-        amount,
-        date,
-    };
-
-    transactions.push(transaction);
-
-    updateTransactionList();
-    updateFinancialSummary();
-
-    // Clear form fields
-    transactionDescription.value = "";
-    transactionAmount.value = "";
-    transactionDate.value = "";
-});
-
-// Update transaction list
-function updateTransactionList() {
+});// Function to update the transaction list
+function updateTransactionList(user) {
+    const transactionList = document.getElementById("transaction-list");
     transactionList.innerHTML = "";
 
-    transactions.forEach((transaction, index) => {
+    user.transactions.forEach((transaction) => {
         const listItem = document.createElement("li");
-        listItem.innerHTML = `
-            <span>${transaction.description}</span>
-            <span>${transaction.type === "income" ? "+" : "-"}${transaction.amount.toFixed(2)}</span>
-            <span>${transaction.date}</span>
-            <button onclick="removeTransaction(${index})">Delete</button>
-        `;
+        listItem.textContent = `${transaction.type} - ${transaction.description}: $${transaction.amount} on ${transaction.date}`;
         transactionList.appendChild(listItem);
     });
 }
-
-// Remove a transaction
+//funtion to remove the 
 function removeTransaction(index) {
     transactions.splice(index, 1);
     updateTransactionList();
     updateFinancialSummary();
 }
 
-// Update financial summary
-function updateFinancialSummary() {
-    totalIncome = 0;
-    totalExpenses = 0;
+// Function to update the financial summary
+function updateFinancialSummary(user) {
+    const summary = calculateSummary(user);
+    document.getElementById("total-income").textContent = `$${summary.income.toFixed(2)}`;
+    document.getElementById("total-expenses").textContent = `$${summary.expenses.toFixed(2)}`;
+    document.getElementById("balance").textContent = `$${summary.balance.toFixed(2)}`;
 
-    transactions.forEach((transaction) => {
-        if (transaction.type === "income") {
-            totalIncome += transaction.amount;
-        } else {
-            totalExpenses += transaction.amount;
-        }
+    // Create a simple chart (you can use a more advanced chart library)
+    const ctx = document.getElementById("summary-chart").getContext("2d");
+    const chart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+            labels: ["Income", "Expenses"],
+            datasets: [
+                {
+                    data: [summary.income, summary.expenses],
+                    backgroundColor: ["#36A2EB", "#FF6384"],
+                },
+            ],
+        },
     });
-
-    const balance = totalIncome - totalExpenses;
-
-    totalIncomeSpan.textContent = totalIncome.toFixed(2);
-    totalExpensesSpan.textContent = totalExpenses.toFixed(2);
-    balanceSpan.textContent = balance.toFixed(2);
 }
