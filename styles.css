@@ -158,6 +158,11 @@ p
 }
     /* Add more responsive styles as needed */
 }
+footer
+{
+ display:none;
+}  
+
 .login-container {
     display: flex;
     justify-content: space-around;
