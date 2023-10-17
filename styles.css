@@ -142,7 +142,20 @@ ul.phone {
     #logo {
         font-size: 30px; /* Decrease the font size for the logo */
     }
+p 
+{
+  padding: 14px;
+  font-size: 16px;
 
+}
+#image3
+{
+    display: none;
+}
+#image2
+{
+    display: none;
+}
     /* Add more responsive styles as needed */
 }
 .login-container {
