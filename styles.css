@@ -156,12 +156,13 @@ p
 {
     display: none;
 }
-    /* Add more responsive styles as needed */
-}
-footer
+
+    footer
 {
  display:none;
-}  
+}/* Add more responsive styles as needed */
+}
+
 
 .login-container {
     display: flex;
