@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Help for Mental Health</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+h1
+        {
+      
+            text-align: center;
+    text-decoration:  underline;
+font-size: 2rem;
+        }
+        a
+        {
+font-size:40px;
+text-decoration: none;
+padding-left: 30px;
+padding-top: 30px;
+text-align: left;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: calc(33.33% - 40px); /* Three boxes in a row with margins */
+            box-sizing: border-box;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .box-icon {
+            font-size: 48px;
+            color: #007BFF;
+        }
+
+        .box-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .box-description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+    </style> 
+</head>
+<body>
+    <header>
+        <a href="index.html">home</a>
+        <h1 style="font-size: 60px;">
+         <i>  
+             Contact us </i> 
+            </h1>
+     
+        <hr>
+    </header>
+    <div class="container">
+        <div class="box">
+            <i class="fa fa-phone box-icon"></i>
+            <h2 class="box-title">24/7 Helpline</h2>
+            <p class="box-description">Call our 24/7 helpline for immediate support.  contact number: 0120-22245-8967</p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fa fa-comments box-icon"></i>
+            <h2 class="box-title">Online Chat</h2>
+            <p class="box-description">Chat with our trained professionals online.  on instagram , facebook , twitter </p>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-envelope box-icon"></i>
+            <h2 class="box-title">Email Support</h2>
+            <p class="box-description">Send us an email, and we'll get back to you as soon as possible. <br> budgettracker2014@gmail.com</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script>
+      
+        gsap.from(".box", {
+            duration: 1,
+            opacity: 0,
+            stagger: 0.2, 
+            ease: "power2.inOut"
+        });
+    </script> -
+</body>
+</html>

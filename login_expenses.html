@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-2.css">
+</head>
+<body>
+<header>
+   <br> <a href="index.html">Home</a>
+</header>
+    <main>
+
+
+
+
+<div class="login-container">
+<form id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" required>
+    <input type="password" id="login-password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+<form id="registration-form">
+    <h2>Register</h2>
+    <input type="text" id="registration-username" placeholder="Username" required>
+    <input type="password" id="registration-password" placeholder="Password" required>
+  
+    <button type="submit">Register</button>
+</form>
+</div>
+<div id="budget-section">
+<!-- Add Income/Expense Form -->
+
+<fieldset>
+<legend>Personal Information</legend>
+  <form id="transaction-form">
+    <h2>Add Income/Expense</h2>
+    <input type="text" id="transaction-description" placeholder="Description" required>
+    <select id="transaction-type" required>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <input type="number" id="transaction-amount" placeholder="Amount" required>
+    <input type="date" id="transaction-date" required>
+    <button type="submit">Add</button>
+</form>
+
+<!-- Transaction History -->
+<h2>Transaction History</h2>
+<ul id="transaction-list"></ul>
+
+<!-- Financial Summary -->
+<h2>Financial Summary</h2>
+<p>Total Income: <span id="total-income">0</span></p>
+<p>Total Expenses: <span id="total-expenses">0</span></p>
+<p>Balance: <span id="balance">0</span></p>
+</div>
+
+<script src="cracke.js" defer></script>
+</main>
+</body>
+</html>

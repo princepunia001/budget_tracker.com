@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #8f9090;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+        /* Services section styles */
+        .services {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Service box styles */
+        .service {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Link styles */
+        .service a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Additional styles for headings and animations */
+        h1 {
+            font-size: 60px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin: 10px 0;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .service a:hover {
+            color: #e00c0c;
+        }
+
+        /* Scroll animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service {
+            animation: fadeIn 1s;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .services {
+                padding: 10px;
+            }
+
+            .service {
+                max-width: 90%;
+                margin: 10px 0;
+            }
+        }
+     .back
+        {
+            text-decoration: none;
+            font-size: 40px;
+            text-align: left;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="back" href="index.html">home</a>
+        <h1>Services</h1>
+      
+    </header>
+
+    <section class="services">
+        <div class="service">
+            <h2>Counseling Sessions</h2>
+            <p>Our experienced counselors provide one-on-one sessions to help you navigate your mental health journey.</p>
+            <a href="https://www.rte.ie/news/2023/1009/1409791-budget-2024-what-we-know-so-far/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="service">
+            <h2>Online Support Groups</h2>
+            <p>Connect with others who share similar experiences and find support in our online community.</p>
+            <a href="https://secure.budgettracker.com/login_secure.php" target="_blank">Join Now</a>
+        </div>
+
+        <div class="service">
+            <h2>Resources Hub</h2>
+            <p>Access a wealth of articles, videos, and tools to better understand and manage your mental health.</p>
+            <a href="https://digitalmarketinginstitute.com/resources/toolkits/content-production-budget-tracker">Explore Resources</a>
+        </div>
+
+        <!-- Add more service boxes as needed -->
+
+    </section>
+</body>
+</html>

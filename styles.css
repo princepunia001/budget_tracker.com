@@ -1,0 +1,248 @@
+ul li
+{
+    display: inline;
+    word-spacing: 20px;
+  
+
+}
+a
+{
+    text-decoration: none;
+    font-size:30px;
+   color: #4a41f6;
+}
+.nav_bar
+{
+    margin-left:450px;
+
+}
+
+#logo {
+
+    font-size: 50px;
+    padding-right: 20px;
+    text-align: center;
+    display: flex centre;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+header {
+    background-color: #ffffff;
+    color: #000000;
+     padding-top: 20px;
+   
+ 
+
+  
+}
+.image{
+
+float: left;
+width:120px;
+
+
+}
+
+.main {
+    background-color: #fffafa;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ 
+     
+         background: linear-gradient(to left, #b3b6b4 0%, #97bed7 51%, #13693471 100%);
+     
+
+}
+
+h1
+{
+    font-size: 50px;
+    color: #093f1d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+text-align: center;
+   text-transform: capitalize;
+}
+p
+{
+    font-size: 30px;
+    font-family: monospace;
+    color: #000000;
+    display: inline-flex;
+    text-align: justify;
+    word-spacing:5px;
+   
+}
+
+#image2
+{
+ width:350px;
+margin: 30px;
+box-shadow: 1px 0px 10px rgb(0, 67, 58);
+}
+
+h2
+{
+    font-size: 70px;
+    padding-top: 30px;
+    color: #374b27;
+}
+#image3
+{
+    width:500px;
+    margin: 30px;
+
+    box-shadow: 3px 0px 10px rgb(0, 0, 0);
+  
+  
+}
+h3
+{
+    font-size: 70PX;
+    padding-top: 30px;
+    color: #093f1d;
+}
+/* #second
+{
+    background: linear-gradient(to left, #2e302e 0%, #77a8c1 51%, #ffa406 100%);
+    
+     
+} */
+
+
+
+/* new code */
+/* Default styles for larger screens */
+ul.phone {
+    display: inline;
+    word-spacing: 20px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    ul.phone {
+        display: block; /* Change the display to block for list items */
+        text-align: center; /* Center align the list items */
+    }
+
+    ul.phone li {
+        margin-bottom: 10px; /* Add some spacing between list items */
+    }
+
+    .nav_bar {
+        margin-left: 0; /* Remove left margin for the navigation bar */
+    }
+
+    #logo {
+        font-size: 30px; /* Decrease the font size for the logo */
+    }
+
+    /* Add more responsive styles as needed */
+}
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap:wrap;
+   
+}
+button {
+    background-color: #2bbdbf;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}form input,
+form select,
+form button {
+    margin-bottom: 10px;
+font-size:15px;
+border-radius: 5px;
+}form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+.my
+{
+color: white;
+}
+
+#budget-section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.footer
+{
+text-decoration: none;
+color: black;
+text-align: justify;
+font-size: 50px;
+font-family: 'Times New Roman', Times, serif;
+box-shadow:0px 0px 10px rgb(0, 0, 0);
+padding: 10px;
+border-radius: 30px;
+background: linear-gradient(to left, #03040400 0%, #5076458c 51%, #0319245d 100%);
+
+
+}
+.footer:hover
+{
+font-size: 60px;
+}
+
+/* #thrid
+{
+    background: linear-gradient(rgb red green blue);
+} */
+.last
+{
+    text-align: left;
+    padding-right: 60px;
+}
+.color
+{
+    background-color: #8fffa8;
+    color: #ffffff;
+}
+#second
+{    background: linear-gradient(to left, #b3b6b4 0%, #5178917a 51%, #13693471 100%);
+     
+
+  
+}
+#third
+{
+    background: linear-gradient(to left, #3c4c5800 0%, #7cd0628c 51%, #70b78d5d 100%);
+}
+

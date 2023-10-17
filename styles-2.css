@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff61;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(86, 212, 234), 0 0 0.2em rgb(105, 238, 245);
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap:wrap;
+   
+}
+
+form {
+    background-color: #33444761;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+    form {
+        width: 80%;
+    }
+}
+form h2 {
+    margin-bottom: 10px;
+}
+
+form input,
+form select,
+form button {
+    margin-bottom: 10px;
+font-size:15px;
+border-radius: 5px;
+}
+
+button {
+    background-color: #2bbdbf;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#budget-section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+a
+{
+text-decoration: none;
+padding-left: 30PX;
+padding-top: 60PX;
+
+}
+#login-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#registration-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
