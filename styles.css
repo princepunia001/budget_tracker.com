@@ -161,9 +161,7 @@ p
     border-radius: 10px; /* Even smaller border radius for mobile view */
   }
 
-  .footer:hover {
-    font-size:none; /* Adjusted font size for hover effect on mobile view */
-  }
+
     /* Add more responsive styles as needed */
 }
 
