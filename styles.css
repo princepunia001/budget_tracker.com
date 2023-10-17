@@ -156,10 +156,14 @@ p
 {
     display: none;
 }
- footer
-{
- display:none;
-}
+.footer {
+    font-size: 20px; /* Further reduced font size for smaller screens */
+    border-radius: 10px; /* Even smaller border radius for mobile view */
+  }
+
+  .footer:hover {
+    font-size: 30px; /* Adjusted font size for hover effect on mobile view */
+  }
     /* Add more responsive styles as needed */
 }
 
