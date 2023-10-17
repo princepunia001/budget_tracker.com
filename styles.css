@@ -162,7 +162,7 @@ p
   }
 
   .footer:hover {
-    font-size: 30px; /* Adjusted font size for hover effect on mobile view */
+    font-size:none; /* Adjusted font size for hover effect on mobile view */
   }
     /* Add more responsive styles as needed */
 }
