@@ -79,7 +79,7 @@ function updateTransactionList(user) {
 
     user.transactions.forEach((transaction) => {
         const listItem = document.createElement("li");
-        listItem.textContent = `${transaction.type} - ${transaction.description}: $${transaction.amount} on ${transaction.date}`;
+        listItem.textContent = `${transaction.type} - ${transaction.description}:₹${transaction.amount} on ${transaction.date}`;
         transactionList.appendChild(listItem);
     });
 }
@@ -93,9 +93,9 @@ function removeTransaction(index) {
 // Function to update the financial summary
 function updateFinancialSummary(user) {
     const summary = calculateSummary(user);
-    document.getElementById("total-income").textContent = `$${summary.income.toFixed(2)}`;
-    document.getElementById("total-expenses").textContent = `$${summary.expenses.toFixed(2)}`;
-    document.getElementById("balance").textContent = `$${summary.balance.toFixed(2)}`;
+    document.getElementById("total-income").textContent = `₹${summary.income.toFixed(2)}`;
+    document.getElementById("total-expenses").textContent = `₹${summary.expenses.toFixed(2)}`;
+    document.getElementById("balance").textContent = `₹${summary.balance.toFixed(2)}`;
 
     // Create a simple chart (you can use a more advanced chart library)
     const ctx = document.getElementById("summary-chart").getContext("2d");
