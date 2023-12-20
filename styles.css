@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+
 ul li
 {
     display: inline;
@@ -9,7 +13,7 @@ a
 {
     text-decoration: none;
     font-size:30px;
-     color:#5d209f;
+     color: #371857;
    font-style:  oblique;
 }
 .nav_bar
@@ -269,10 +273,10 @@ font-size: 60px;
     background: linear-gradient(to left, #3c4c5800 0%, #7cd0628c 51%, #70b78d5d 100%);
 }
 ul li a:hover{
-    color: #252e30c3;
+ color: #252e30c3;
    
 
-
+ text-shadow: 1px 1px 2px rgb(147, 112, 112), 0 0 1em rgb(42, 94, 38), 0 0 0.2em rgb(248, 248, 255);
     
 }
 #logo:hover{
