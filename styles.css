@@ -164,7 +164,9 @@ p
 .footer {
     font-size: 20px; /* Further reduced font size for smaller screens */
     border-radius: 10px; /* Even smaller border radius for mobile view */
-  }
+text-decoration: none;  
+
+}
 
 
     /* Add more responsive styles as needed */
