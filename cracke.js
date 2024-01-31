@@ -72,7 +72,8 @@ document.getElementById("login-form").addEventListener("submit", (event) => {
     } else {
         alert("Login failed. Please check your username and password.");
     }
-});// Function to update the transaction list
+});
+// Function to update the transaction list
 function updateTransactionList(user) {
     const transactionList = document.getElementById("transaction-list");
     transactionList.innerHTML = "";
@@ -112,3 +113,5 @@ function updateFinancialSummary(user) {
         },
     });
 }
+
+// #############################
