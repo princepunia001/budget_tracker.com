@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-   <br> <a href="index.html">Home</a>
+   <br> <a style="font-size: x-large;" href="index.html " >Home</a>
 </header>
     <main>
 
@@ -16,16 +16,16 @@
 
 
 <div class="login-container">
-<form id="login-form">
+<form id="login-form" action="connect.php" method="post">
     <h2>Login</h2>
-    <input type="text" id="login-username" placeholder="Username" required>
-    <input type="password" id="login-password" placeholder="Password" required>
+    <input type="text" id="login-username" placeholder="Username" required name="Username">
+    <input type="password" id="login-password" placeholder="Password" required name="password">
     <button type="submit">Login</button>
 </form>
 <form id="registration-form">
     <h2>Register</h2>
-    <input type="text" id="registration-username" placeholder="Username" required>
-    <input type="password" id="registration-password" placeholder="Password" required>
+    <input type="text" id="registration-username" placeholder="Username" required name="Username">
+    <input type="password" id="registration-password" placeholder="Password" required name="password">
   
     <button type="submit">Register</button>
 </form>
@@ -35,15 +35,16 @@
 
 <fieldset>
 <legend>Personal Information</legend>
-  <form id="transaction-form">
+  <form id="transaction-form" action="" method="post">
     <h2>Add Income/Expense</h2>
-    <input type="text" id="transaction-description" placeholder="Description" required>
+    <input type="text" id="transaction-description" placeholder="Description" name="Description"required>
     <select id="transaction-type" required>
         <option value="income">Income</option>
         <option value="expense">Expense</option>
     </select>
-    <input type="number" id="transaction-amount" placeholder="Amount" required>
-    <input type="date" id="transaction-date" required>
+    <input type="number" id="transaction-amount" placeholder="Amount" required name="Amount">
+    <input type="date" id="transaction-date" name="transaction-date"
+     required>
     <button type="submit">Add</button>
 </form>
 
